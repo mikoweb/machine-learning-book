@@ -1,0 +1,21 @@
+{
+  "name": "ro1-cw1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build-web": "browserify src/index.js -o dist/index.js -t [ babelify ]",
+    "build-cli": "browserify src/index.js --node -o dist/index.js -t [ babelify ]",
+    "start": "npm run build-cli && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.0"
+  }
+}

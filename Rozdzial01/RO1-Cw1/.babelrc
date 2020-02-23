@@ -1,0 +1,11 @@
+{
+  "sourceMaps": false,
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": ["safari >= 7", "ie >= 11"]
+      },
+      "modules": "commonjs"
+    }]
+  ]
+}
